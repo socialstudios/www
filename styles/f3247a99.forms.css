@@ -1,0 +1,126 @@
+/*********** basic definition ***************/
+/*font size*/
+.f16{
+    font-size: 16px;
+}
+.f15{
+    font-size: 15px;
+}
+.f14{
+    font-size: 14px;
+}
+/*font color*/
+.blackTextHD{
+    color: #000000;
+    font-weight: bold;
+}
+.whiteHD{
+    color: #ffffff;
+    font-weight: bold;
+}
+.grayText{
+    color: #79797f;
+}
+.lightGray{
+    color: #B8B8B8;
+}
+/*font style*/
+.italic{
+    font-style: italic;
+}
+/*font weight*/
+.fontNormal{
+    font-weight: normal;
+}
+.listCircle{
+    list-style-type: circle;
+}
+.black{
+    color: #000000;
+}
+.white{
+    color: #ffffff;
+}
+.blue{
+   color: #4ab0ed;
+}
+.bold{
+    font-family: EauSansBold;
+}
+.center{
+    text-align: center;
+}
+/*********** END basic definition ***********/
+
+body{
+    counter-reset:section;
+    counter-reset: subsection;
+    background: black;
+    font-family: EauSansBook;
+    color: #FFF;
+
+}
+#terms,
+#privacy{
+    width: 619px;
+    margin: 0 auto;
+}
+
+#terms li,
+#privacy li{
+    list-style-position: inside;
+}
+#terms ol>li,
+#privacy ol>li{
+    counter-increment: section;
+}
+
+#terms li ul li,
+#privacy li ul li{
+    list-style-position: outside;
+    /*color: #000000;*/
+    font-weight: normal;
+    font-size: 15px;
+}
+.padding0,
+#terms ol,
+#privacy ol{
+    padding: 0;
+
+
+
+}
+li{
+    /*font-weight: bold;*/
+    font-size: 18px;
+    color: #FFF;
+
+}
+
+h3{
+    font-size: 18px;
+    font-family: EauSansBold;
+
+}
+p{
+    /*color: #000000;*/
+    font-size: 14px;
+    /*font-weight: normal;*/
+    /*font-family: EauSansBook;*/
+}
+ul{
+    list-style-type: disc;
+}
+ul.count{
+    counter-reset: subsection;
+}
+ul.count>li:before{
+
+    counter-increment: subsection;
+    content: counter(section) "." counter(subsection) ".";
+}
+
+#privacy .lightGray li,
+#terms .lightGray li {
+    color: #FFF;
+}

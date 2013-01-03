@@ -1,0 +1,114 @@
+/**
+*	Created on June 20, 2012
+*	@author: moshidelgo.
+*/
+html{overflow-x: hidden;}
+body{background:#000;color:#f2f2f2;font-family:EauSansBlack;text-shadow: 1px 1px 1px rgba(0,0,0,0.004);-webkit-font-smoothing: none;-webkit-font-smoothing: subpixel-antialiased;-webkit-font-smoothing: antialiased;}
+a {text-decoration:none;outline:none;}
+a:active {border:none;}
+p, h1, h2, h3, h4 {padding:0;margin:0;}
+ul {list-style-type:none;}
+
+/* browser not supported */
+#no_html {position:fixed;top:0;left:0;width:100%;height:100%;background:#000;z-index:1000;display:none;}
+#no_html .msg {margin:150px auto;width:500px;font-size: 20px;}
+#no_html .msg p {margin-bottom:20px;}
+#no_html .msg a {text-decoration:underline;margin-left: 5px;}
+
+/* screen */
+#screen {position:fixed;top:0;left:0;width:100%;height:100%;background:#000;z-index:100;display:none;}
+#master {width:100%;height:100%;}
+
+/* Living room */
+#living_room { min-width:960px;height:523px;background: url("/images/8cfa4fd7.livingroombg.png") 50% 0 no-repeat;}
+#living_room article {position: relative;margin-top: -139px;left: 50%;width: 812px;margin-left: -347px;}
+#living_room article a { text-decoration: underline; }
+#viewer{width:812px;height:207px;margin:0 auto;}
+#viewer img {float:left;}
+#viewer .logo {float:left;margin:-67px 0px 0px 251px;}
+
+#left_cam {position: relative;top:66px;width: 303px;height:455px;/*float:left;margin-top: 68px;*/}
+#right_cam {position: absolute;left: 100%;margin-left: -241px;margin-top: -349px;z-index: 6;width: 241px;/*float:right;margin-top: 174px;*/}
+
+/* replay video btn */
+#playAgain {background: url("/images/bb7c0b30.playagain.png") 0px 333px no-repeat;width: 143px;height: 373px;position: absolute;z-index: 5;text-indent: -9999px;left: 50%;top: 0;margin-left: 123px;}
+#playAgain:hover {background: url("/images/36a6358f.playagain_hover.png") 0px 333px no-repeat;}
+
+/* Company info */
+.comp_info {width:960px;margin:40px auto;/* display:none; */}
+.comp_info article a { color: #428cca;}
+.comp_info artivle a:hover {color:#96c8f3}
+.comp_info article h2 {float:left;padding:0;margin:0;font-weight:100;font-size:37px;margin-left:100px;}
+
+/* Facebook connect btn */
+#fb_connect {float:left;margin-left:30px;margin-top:7px;}
+.fb_connect_btn a {float:left;text-indent:-9999px;background:url(/images/98d93cc5.sprite.png) no-repeat 1px 1px;width:242px;height:39px;cursor:pointer;}
+.fb_connect_btn a:hover {background:url(/images/98d93cc5.sprite.png) no-repeat 1px -41px;}
+.fb_connect_btn a:active {background:url(/images/98d93cc5.sprite.png) no-repeat 0px -83px;}
+.disabledFb a {background:url(/images/8bf03589.fb_connect_disabled.jpg) no-repeat 0 0;cursor: default;}
+.disabledFb a:hover {background:url(/images/8bf03589.fb_connect_disabled.jpg) no-repeat 0 0;}
+.disabledFb a:active {background:url(/images/8bf03589.fb_connect_disabled.jpg) no-repeat 0 0;}
+
+#comp_info_user {margin:0 auto;height: 440px;font-size:15px;font-style: none;font-family:EauSansBook;font-weight:100;text-shadow: 1px 1px 1px rgba(0,0,0,0.004);-webkit-font-smoothing: none;-webkit-font-smoothing: subpixel-antialiased;-webkit-font-smoothing: antialiased;}
+#comp_info_user header {width:640px;padding:24px 0px 24px 0px;}
+#info_box {float:left;width:640px;padding-top: 24px;}
+#info_box #info_box_footer{width: 640px;border-bottom: 1px solid #666666;}
+/* info */
+#info {float: left;}
+#info h3 {font-size:20px;}
+#info h4 {font-size:18px;}
+#info header img {float:left;}
+#info h1 {color:#f2f2f2;text-shadow: 1px 1px 1px rgba(0,0,0,0.004);-webkit-font-smoothing: none;-webkit-font-smoothing: subpixel-antialiased;-webkit-font-smoothing: antialiased;font-family: EauSansBold;margin: 25px 0px 5px 60px;font-size:20px;}
+#info header p {font-size:17px;}
+
+#left_info {float:left;}
+#about {float:left;height:225px;border-bottom:1px solid #666666;}
+#about p {padding-top:17px;float: left;}
+#about>a {color:#96c8f3;}
+#request_demo {float:left;margin: 0px 0px 0px 78px;}
+#team {float: left;width: 640px;padding: 24px 0; box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+#team ul {margin: 0;width:200px; float: left;}
+#team ul li {height:45px;margin-top:10px;}
+#team ul li img {float:left;width:45px;height:45px;}
+#team ul li .name {margin:20px 0px 0px 5px;float:left;width: 140px;font-size:12px;font-weight:bold;}
+#team ul li .title {margin-left:5px;float:left;font-size:12px;}
+#jobs {float:left;font-size:15px;}
+#jobs a, #info_box_footer #jobs p {float:left;}
+#info_box_footer #jobs p {color: white;}
+
+/* facebook connect */
+#facebook_connect {float:left;padding:0px 0px 0px 0px;margin-left: 60px;width:242px;border-bottom:1px solid #666666;}
+#facebook_connect h4 {margin: 21px 0px 5px 0px;}
+
+/* about Your Show */
+#about_your_show {float:left;padding:24px 0px 0px 0px;margin-left: 60px;width:242px;}
+#about_your_show h4{font-size: 18px;margin: 0px 0 13px 0;}
+.about_your_show_text{font-size: 12px;}
+.about_your_show_image{background: url(/images/4bccdd1a.social_studios_homepage.png) no-repeat 0 0;width: 242px; height: 172px;margin: 0px 0px 9px 0px;}
+/* play_trailer_box */
+#play_trailer_box {float:left;padding:24px 0px 30px 0px;margin-left: 60px;width:242px;border-bottom:1px solid #666666;}
+#playTrailer {float:left;text-indent:-9999px;background:url(/images/c5444ac4.film.jpg) no-repeat 0 0;width:240px;height:125px;margin-top:12px;}
+
+/* follow us */
+#follow_us {float:left;width:142px;height:52px;margin:-6px 0px 0px 67px;padding:0px 0px 0px 0px;}
+#follow_us a {float:left;text-indent:-9999px;width:37px;height:37px;margin:12px 10px 0px 0px;}
+#follow_us #fb {background:url(/images/e0d60845.followsprite.jpg) no-repeat 0px 0px;}
+#follow_us #tw {background:url(/images/e0d60845.followsprite.jpg) no-repeat -47px 0px;}
+#follow_us #li {background:url(/images/e0d60845.followsprite.jpg) no-repeat -93px 0px;}
+
+/* comp_info_user footer */
+#comp_info_user footer{width:960px;float:left;margin-bottom:30px; padding: 24px 0;}
+#comp_info_user footer ul {float:left;width: 300px;margin:0;padding:0;}
+#comp_info_user footer ul li {display: inline;}
+#comp_info_user footer p {float:right;color:#666666;}
+#comp_info_user footer ul li a {color:#666666;}
+#comp_info_user footer ul li a:hover {color:#999999;}
+
+/* comp_info_connet footer */
+#comp_info_connect footer{width:960px;float:left;margin-top:30px;text-align:center;margin-bottom:30px;}
+#comp_info_connect footer iframe {height: 65px;}
+#comp_info_connect footer p {color:#666666;font-family:EauSansBook;margin-top:20px;}
+
+/* face_pile */
+#face_pile {overflow:hidden; width:200px;}
+#face_pile img {float:left;padding:5px 5px 0px 0px;}
