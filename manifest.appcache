@@ -18,7 +18,11 @@ CACHE MANIFEST
 #   urlsFromRequests: false
 #   cacheFilter: .*
 #   networkFilter: null
+<<<<<<< HEAD
 #  url:
+=======
+#  url: 
+>>>>>>> 1e1a2ad15ebfd88db10fbfeb51330306084334f9
 #  configFile: /usr/local/lib/node_modules/yeoman/lib/support/confess.json
 
 CACHE:

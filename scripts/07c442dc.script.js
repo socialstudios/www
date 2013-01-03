@@ -54,7 +54,11 @@ $(document).ready(function(){
         // Scroll the background at var speed
         // the yPos is a negative value because we're scrolling it UP!
         var yPos = -($window.scrollTop() / $self.data('speed'));
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 1e1a2ad15ebfd88db10fbfeb51330306084334f9
         // If this element has a Y offset then add it on
         if ($self.data('offsetY')) {
           yPos += $self.data('offsetY');

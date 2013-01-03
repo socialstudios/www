@@ -233,4 +233,8 @@
 <glyph unicode="&#x2122;" horiz-adv-x="845" d="M236 1470l10 48h280l-10 -48h-108l-70 -331h-57l69 331h-114zM494 1139l79 379h91l34 -312l166 312h90l-80 -379h-57l66 309l-168 -309h-64l-35 309l-65 -309h-57z" />
 <glyph unicode="&#xe000;" horiz-adv-x="1095" d="M0 0v1096h1096v-1096h-1096z" />
 </font>
+<<<<<<< HEAD
 </defs></svg>
+=======
+</defs></svg> 
+>>>>>>> 1e1a2ad15ebfd88db10fbfeb51330306084334f9
