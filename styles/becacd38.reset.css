@@ -105,11 +105,7 @@ pre {
 
 textarea { overflow: auto; } /* www.sitepoint.com/blogs/2010/08/20/ie-remove-textarea-scrollbars/ */
 
-<<<<<<< HEAD
-.ie6 legend, .ie7 legend { margin-left: -7px; }
-=======
 .ie6 legend, .ie7 legend { margin-left: -7px; } 
->>>>>>> 1e1a2ad15ebfd88db10fbfeb51330306084334f9
 
 /* Align checkboxes, radios, text inputs with their label by: Thierry Koblentz tjkdesign.com/ez-css/css/base.css  */
 input[type="radio"] { vertical-align: text-bottom; }
@@ -169,11 +165,7 @@ a:hover { color: #036; }
 /**
  * Primary styles
  *
-<<<<<<< HEAD
- * Author:
-=======
  * Author: 
->>>>>>> 1e1a2ad15ebfd88db10fbfeb51330306084334f9
  */
 
 
@@ -266,7 +258,4 @@ a:hover { color: #036; }
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3{ page-break-after: avoid; }
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 1e1a2ad15ebfd88db10fbfeb51330306084334f9
