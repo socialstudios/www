@@ -1,7 +1,7 @@
 if [ $# -ne 1 ]
 then
   echo "Usage:"
-  echo "       `basename $0` 'commit message'"
+  echo "       `basename $0` 'commit message (what is new on the site?)'"
   exit 1
 fi
 
