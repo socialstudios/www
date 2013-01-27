@@ -1,7 +1,7 @@
 # Given URL is not allowed by the Application configuration.: One or more of the given URLs is not allowed by the App's settings.  It must match the Website URL or Canvas URL, or the domain must be a subdomain of one of the App's domains. (undefined, #undefined)
 CACHE MANIFEST
 
-# Time: Sun Jan 27 2013 17:18:05 GMT+0200 (IST)
+# Time: Sun Jan 27 2013 17:28:37 GMT+0200 (IST)
 # This manifest was created by confess.js, http://github.com/jamesgpearce/confess
 #
 # Retrieved URL: /
@@ -61,4 +61,4 @@ styles/becacd38.reset.css
 
 NETWORK:
 *
-# git rev: d764c64f7728884ab9e12c402053e7716e2e3fb7
+# git rev: effc6aca779ec6ccb23458cc1ed2b2ead059a355
