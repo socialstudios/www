@@ -23,12 +23,13 @@
   <meta name="keywords" content="">
   <meta name="copyright" content="© 2012 Musetrack Ltd All Rights Reserved.">
 
-    <link rel="stylesheet" href="styles/975124d0.fonts.css">
-    <link rel="stylesheet" href="styles/becacd38.reset.css">
+  <link rel="stylesheet" href="styles/975124d0.fonts.css">
+  <link rel="stylesheet" href="styles/becacd38.reset.css">
   <link rel="stylesheet" href="styles/74058013.style.css">
   <link rel="icon" href="./favicon.ico" type="image/x-icon">
 
   <script type="text/javascript">
+
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-32932720-1']);
       _gaq.push(['_trackPageview']);
@@ -38,6 +39,11 @@
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
+
+      notifyAnalytics = function() {
+        _gaq.push(['_trackEvent', 'Our Website', 'yourshow fb app link clicked']);
+      }
+
   </script>
 
 </head>
@@ -174,7 +180,7 @@
         <div class="about_your_show_image"></div>
         <div class="about_your_show_text">
           <div>A personal daily TV show starring you and Your Friends!</div>
-          <div>Find us on Facebook: Your Show App</div>
+          <div>Find us on Facebook: <a href="https://apps.facebook.com/yourshow/?fb_source=search&ref=ts&fref=ts" onclick='notifyAnalytics();'>Your Show App</a></div>
         </div>
       </article>
       <article id="facebook_connect">
@@ -210,4 +216,4 @@
 
 </body>
 </html>
-<!-- Built on Sun Jan 27 17:28:37 IST 2013,     git rev: effc6aca779ec6ccb23458cc1ed2b2ead059a355 -->
+<!-- Built on Sun Jan 27 18:00:21 IST 2013,     git rev: 324b1a799f5c6b5c2f93d86f669abb49ace6d273 -->
