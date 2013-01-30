@@ -6,6 +6,13 @@ then
   exit 1
 fi
 
+echo First: switching to branch gh-pages and pulling from github
+git co gh-pages
+git pull origin gh-pages
+
+echo Now: Switching to master and compiling
+git co master
+
 set -e
 yeoman clean
 yeoman build
