@@ -1,7 +1,7 @@
 # Given URL is not allowed by the Application configuration.: One or more of the given URLs is not allowed by the App's settings.  It must match the Website URL or Canvas URL, or the domain must be a subdomain of one of the App's domains. (undefined, #undefined)
 CACHE MANIFEST
 
-# Time: Wed Jan 30 2013 09:17:29 GMT+0200 (IST)
+# Time: Fri Feb 01 2013 01:18:52 GMT+0200 (IST)
 # This manifest was created by confess.js, http://github.com/jamesgpearce/confess
 #
 # Retrieved URL: /
@@ -25,8 +25,8 @@ CACHE:
 http://connect.facebook.net/en_US/all.js
 /images/36a6358f.playagain_hover.png
 /images/4bccdd1a.social_studios_homepage.png
+/images/51308c5b.noscreen_livingroombg.png
 /images/8bf03589.fb_connect_disabled.jpg
-/images/8cfa4fd7.livingroombg.png
 /images/98d93cc5.sprite.png
 /images/bb7c0b30.playagain.png
 /images/c5444ac4.film.jpg
@@ -61,4 +61,4 @@ styles/ce30d976.fonts.css
 
 NETWORK:
 *
-# git rev: ebd8ad795c7a1033dfc1db4a55caa1655acf10f8
+# git rev: 765c575f34d86292959c2b7dbf81696b3d6c796d

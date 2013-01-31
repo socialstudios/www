@@ -20,7 +20,7 @@ ul {list-style-type:none;}
 #master {width:100%;height:100%;}
 
 /* Living room */
-#living_room { min-width:960px;height:523px;background: url("/images/8cfa4fd7.livingroombg.png") 50% 0 no-repeat;}
+#living_room { min-width:960px;height:523px;background: url("/images/51308c5b.noscreen_livingroombg.png") 50% 0 no-repeat;}
 #living_room article {position: relative;margin-top: -139px;left: 50%;width: 812px;margin-left: -347px;}
 #living_room article a { text-decoration: underline; }
 #viewer{width:812px;height:207px;margin:0 auto;}
