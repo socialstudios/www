@@ -1,0 +1,41 @@
+.div-privacy {
+    width: 640px;
+    margin: 0px auto;;
+    background-color:  #ffffff;
+    position: relative;
+    top: -455px;
+    padding: 5px 30px;
+}
+
+.permissions-body
+{
+    background: url("/images/51308c5b.noscreen_livingroombg.png") no-repeat scroll 50% 0 transparent;
+    background-color: #000000;
+    color: #000000;
+    line-height: 1.6;
+}
+
+.permissions-heading  {
+    color: #0080D5;
+}
+
+.text-center {
+    text-align: center;;
+}
+
+.div-privacy p {
+    margin: 0px;
+}
+
+.right_cam {
+    left: 100%;
+    margin-left: -241px;
+    margin-top: 165px;
+    position: absolute;
+    width: 241px;
+    z-index: 6;
+}
+
+.left-camera {
+    margin-top: 60px;
+}
