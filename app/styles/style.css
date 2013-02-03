@@ -111,6 +111,6 @@ ul {list-style-type:none;}
 #comp_info_connect footer p {color:#666666;font-family:EauSansBook;margin-top:20px;}
 
 /* face_pile */
-#face_pile {overflow:hidden; width:200px;}
+#face_pile {overflow:hidden; width:200px; margin-top: 10px}
 #face_pile img {float:left;padding:5px 5px 0px 0px;}
 
