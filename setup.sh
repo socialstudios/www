@@ -1,14 +1,19 @@
 #!/bin/bash
+
 set -e # exit on error
+
+function ubuntu_install_node() {
+  sudo apt-get update
+  sudo apt-get install python-software-properties -y
+  sudo add-apt-repository ppa:chris-lea/node.js -y
+  sudo apt-get install nodejs npm -y
+}
 
 unamestr=`uname`
 echo Installing node and npm
 if [[ "$unamestr" == 'Linux' ]]; then
   sudo apt-get update
-  which nodejs || sudo apt-get install python-software-properties
-  which nodejs || sudo add-apt-repository ppa:chris-lea/node.js
-  which nodejs || sudo apt-get update
-  which nodejs || sudo apt-get install nodejs npm
+  node --version || ubuntu_install_node
   sudo apt-get install python-dev
 elif [[ "$unamestr" == 'Darwin' ]]; then
   which node || brew install node
@@ -17,12 +22,15 @@ elif [[ "$unamestr" == 'Darwin' ]]; then
   which phantomjs || brew install phantomjs
 fi
 
-echo installing testacular
-which testacular || sudo npm install -g testacular
-
 echo Installing yeoman
 which compass || sudo gem install compass
 which yeoman || sudo npm install -g yeoman
 
-echo DONE
-set +e
+
+echo s3-static-site installed?
+gem list s3-static-site -i || gem install s3-static-site || sudo gem install s3-static-site
+echo capistrano?
+gem list capistrano -i || gem install capistrano || sudo gem install capistrano
+
+echo Did you remember to set: AWS_ACCESS_KEY and AWS_SECRET_KEY ?
+
