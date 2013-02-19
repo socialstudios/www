@@ -5,6 +5,16 @@
 
 $(document).ready(function(){
 
+  show_co_info = GetURLParameter("info");
+  if (show_co_info == "093287n092830982y3n"){
+    /*##
+    #
+    # Hi dude , add this param to url to see who we are.
+    # 
+    ##*/
+    show_company_info();
+  }
+
   if (Modernizr.video) {
     $("#no_html").hide();
   } else {
@@ -105,4 +115,19 @@ $(document).ready(function(){
 
 function master_ended(){
   $("#screen").fadeOut();
+}
+
+function show_company_info(){
+  $("#comp_info_user").show();
+}
+
+function GetURLParameter(sParam){
+  var sPageURL = window.location.search.substring(1);
+  var sURLVariables = sPageURL.split('&');
+  for (var i = 0; i < sURLVariables.length; i++) {
+    var sParameterName = sURLVariables[i].split('=');
+    if (sParameterName[0] == sParam) {
+      return sParameterName[1];
+    }
+  }
 }
