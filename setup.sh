@@ -31,6 +31,8 @@ echo s3-static-site installed?
 gem list s3-static-site -i || gem install s3-static-site || sudo gem install s3-static-site
 echo capistrano?
 gem list capistrano -i || gem install capistrano || sudo gem install capistrano
+echo mime-types?
+gem list mime-types -i || gem install mime-types || sudo gem install mime-types
 
 echo Did you remember to set: AWS_ACCESS_KEY and AWS_SECRET_KEY ?
 
