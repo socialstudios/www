@@ -4,28 +4,15 @@
 */
 
 $(document).ready(function(){
-
-  show_co_info = GetURLParameter("info");
-  if (show_co_info == "093287n092830982y3n"){
-    /*##
-    #
-    # Hi dude , add this param to url to see who we are.
-    # 
-    ##*/
-    show_company_info();
+  code = GetURLParameter("code");
+  if (code == "seeall"){
+    $("#middle").show();
   }
-
-  if (Modernizr.video) {
-    $("#no_html").hide();
-  } else {
-    $("#no_html").show();
-  }
-
-  var master = document.getElementById("master");
-  var signinWin;
-
+  change_view("about");
+  handle_browser_support_html5();
+  register_tabs_events();
   FB.init({
-        appId      : '287568434655109', // App ID
+        appId      : '333928046667696', // App ID
         status     : true, // check login status
         cookie     : true, // enable cookies to allow the server to access the session
         xfbml      : true,  // parse XFBML
@@ -34,12 +21,6 @@ $(document).ready(function(){
   FB.getLoginStatus(function(response){
     onStatus(response); // once on page load
     FB.Event.subscribe('auth.statusChange', onStatus.onStatus); // every status change
-  });
-
-  $("#playTrailer").bind('click', function(){
-    $("#screen").fadeIn();
-    master.play();
-    return false;
   });
 
   $window = $(window);
@@ -102,26 +83,16 @@ $(document).ready(function(){
           var coords = (yPos + $video.data('offsetY')) + 'px';
 
           $video.css({ top: coords });
-
         });
-
       };
-
     });
-
   });
-
 });
 
-function master_ended(){
-  $("#screen").fadeOut();
-}
-
-function show_company_info(){
-  $("#comp_info_user").show();
-}
-
 function GetURLParameter(sParam){
+  /*
+    Retrieve parameter from url.
+   */
   var sPageURL = window.location.search.substring(1);
   var sURLVariables = sPageURL.split('&');
   for (var i = 0; i < sURLVariables.length; i++) {
@@ -131,3 +102,31 @@ function GetURLParameter(sParam){
     }
   }
 }
+
+function handle_browser_support_html5(){
+    if (Modernizr.video) {
+        $("#no_html").hide();
+    } else {
+        $("#no_html").show();
+    }
+}
+
+function register_tabs_events(){
+    $(".tab-btn").mouseover(function(){
+        $(this).addClass("hover");
+    }).mouseout(function(){
+        $(this).removeClass("hover");
+    });
+    $(".tab-btn").click(function(){
+        $(this).removeClass("hover");
+        $(".tab-btn").each(function(){$(this).removeClass("selected");})
+        $(this).addClass("selected");
+    });
+}
+
+function change_view(view){
+    $("#main_content").children().each(function(idx, val){$(val).hide()});
+    elem = document.getElementById(view);
+    $(elem).show();
+}
+

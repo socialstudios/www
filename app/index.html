@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -22,10 +22,12 @@
   <meta name="ROBOTS" content="all">
   <meta name="keywords" content="">
   <meta name="copyright" content="© 2012 Social Studios Ltd All Rights Reserved.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="styles/fonts.css">
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/style.css">
+
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 
   <script type="text/javascript">
@@ -48,6 +50,7 @@
 
 </head>
 <body>
+
   <div id="no_html">
     <div class="msg">
       <p>Your browser does not support HTML5</p>
@@ -59,141 +62,231 @@
   <div id="main" role="main">
 
     <!-- Section #1 / Splash image (living room) -->
-    <section id="living_room" data-speed="5" data-type="background">
-      <div id="left_cam">
-        <img src="images/left_cam.png" width="303" height="455"/>
-      </div>
-
-      <article>
-        <div id="viewer" data-type="sprite" data-offsetY="100" data-Xposition="50%" data-speed="4">
-          <img src="images/viewer.png" width="812" height="207"/>
-          <div class="logo">
-            <img src="images/couch_soslogo.png" width="250" height="100" style="position:relative; margin:-35px 0 0 -14px;"/>
-          </div>
-        </div>
-        </article>
-        <div id="right_cam">
-        <img src="images/right_cam.png" width="241" height="349"/>
-      </div>
-    </section>
-    <section id="comp_info_user" class="comp_info" style="display:none;">
-      <article id="info">
-        <div id="info_box">
-          <div id="left_info">
-
-            <section id="about">
-              <h4>About Social Studios</h4>
-                <p>Social Studios was founded by TV and Internet executives who saw an opportunity to produce engaging, personalized TV shows from social media newsfeeds.</p>
-                <p>While social media platforms have yet to deliver a TV experience that viewers want to watch, Social Studios’ social media TV app quickly identifies posts from people's close friends and favorite pages and automagically turns them into <a href="http://apps.facebook.com/yourshow/"><i>Your Show</i></a>.</p>
-                <p>The professionally produced daily TV show, <i>Your Show</i>, complete with presenter, makes for entertaining viewing on any screen.</p>
-            </section>
+    <section>
+        <div id="living_room" data-speed="5" data-type="background">
+          <div id="left_cam">
+            <img src="images/left_cam.png" width="303" height="455"/>
           </div>
 
-          <section id="team">
-            <h4>Social Studios' Team</h4>
-            <ul>
-              <li>
-                <img src="images/anat.jpg" width="45" height="45"/>
-                <p class="name">Anat Amibar</p>
-                <p class="title">CEO</p>
-              </li>
-              <li>
-                <img src="images/moshi.jpg" width="45" height="45"/>
-                <p class="name">Moshi Delgo</p>
-                <p class="title">COO</p>
-              </li>
-              <li>
-                <img src="images/yael.jpg" width="45" height="45"/>
-                <p class="name">Yaeli Avnery</p>
-                <p class="title">Creative Director</p>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <img src="images/ran_tavory.jpg" width="45" height="45"/>
-                <p class="name">Ran Tavory</p>
-                <p class="title">CTO</p>
-              </li>
-              <li>
-                <img src="images/tom_grasty.jpg" width="45" height="45"/>
-                <p class="name">Thomas Grasty</p>
-                <p class="title">Business development</p>
-              </li>
-              <li>
-                <img src="images/alon.png" width="45" height="45"/>
-                <p class="name">Alon Golan</p>
-                <p class="title">Developer</p>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <img src="images/itai.jpg" width="45" height="45"/>
-                <p class="name">Itai Keidar</p>
-                <p class="title">Developer</p>
-              </li>
-              <li>
-                <img src="images/ori_shmolovsky.jpg" width="45" height="45"/>
-                <p class="name">Ori Shmolovsky</p>
-                <p class="title">Developer</p>
-              </li>
-              <li>
-                <img src="images/onn_henner.jpg" width="45" height="45"/>
-                <p class="name">Onn Henner</p>
-                <p class="title">Multimedia Artist</p>
-              </li>
-            </ul>
-          </section>
-          <footer id="info_box_footer">
-            <section id="jobs">
-              <h4>Jobs @ Social Studios</h4>
-              <p>Join us: </p>
-              <a href="mailto:jobs@socialstudios.tv" style="margin-left:3px;">jobs@socialstudios.tv</a>
-            </section>
-            <section id="request_demo">
-              <h4>Contact Us</h4>
-              <a href="mailto:info@socialstudios.tv">info@socialstudios.tv</a>
-            </section>
-            <article id="follow_us">
-              <a href="http://www.facebook.com/socialstudiosTV" id="fb">facebook</a>
-              <a href="https://twitter.com/socialstudiostv" id="tw">twitter</a>
-              <a href="http://il.linkedin.com/company/social-studios-tv" id="li">linkedin</a>
+          <article>
+            <div id="viewer" data-type="sprite" data-offsetY="100" data-Xposition="50%" data-speed="4">
+              <img src="images/viewer.png" width="812" height="207"/>
+              <div class="logo">
+                <img src="images/couch_soslogo.png" width="250" height="100" style="position:relative; margin:-35px 0 0 -14px;"/>
+              </div>
+            </div>
             </article>
-          </footer>
-
-        </div> <!--  //# end of info_box -->
-
-      </article> <!--  //# end of info -->
-
-      <article id="about_your_show">
-        <h4>About <a href="https://apps.facebook.com/yourshow/" style="color:#f2f2f2">Your Show</a></h4>
-        <div class="about_your_show_image"></div>
-        <div class="about_your_show_text">
-          <p>A personal daily TV show starring you and Your Friends!</p>
-          <p style="margin-top:1em">Find us on Facebook: <a href="https://apps.facebook.com/yourshow/" onclick='notifyAnalytics();'>Your Show App</a></p>
+            <div id="right_cam">
+            <img src="images/right_cam.png" width="241" height="349"/>
+          </div>
         </div>
-      </article>
-      <article id="facebook_connect">
-        <!-- <div class="fb_connect_btn disabledFb">
-          <a href="#" onclick="return false;">facebook connect</a>
-        </div>-->
-        <div id="face_pile">
-          <iframe src="http://www.facebook.com/plugins/facepile.php?app_id=333928046667696&colorscheme=dark&max_rows=1" scrolling="no" frameborder="0" allowTransparency="true" width="200"></iframe>
+    </section>
+
+    <!-- Section #2 / company information -->
+    </section>
+        <div id="middle" style="display: none;">
+            <nav>
+                <!-- tabs content -->
+                <div onclick="change_view('about')" class="tab-btn selected"><p>About Us<p></div>
+                <div onclick="change_view('team')" class="tab-btn"><p>Team</p></div>
+                <div onclick="change_view('press')" class="tab-btn"><p>Press</p></div>
+                <div onclick="change_view('contactus')" class="tab-btn"><p>Contact Us</p></div>
+            </nav>
+            <aside>
+                <!-- sidebar -->
+                <div id="follow_us">
+                    <p>Follow us on:</p>
+                    <a href="#" target="_blank" class="fb">facebook</a>
+                    <a href="#" target="_blank" class="tw">twitter</a>
+                    <a href="#" target="_blank" class="ln">linkedin</a>
+                </div>
+                <div id="contact_us">
+                    <h1>Contact Us</h1>
+                    <a href="mailto:info@socialstudios.tv">info@socialstudios.tv</a>
+                    <p>Thank you.</p>
+                </div>
+            </aside>
+
+            <div id="main_content">
+
+                <div id="about">
+                    <h1>About Social Studios</h1>
+                    <p>Social Studios was founded by TV and Internet executives who saw an opportunity
+                    to produce engaging, personalized TV shows from social media newsfeeds.
+                    While social media platforms have yet to deliver a TV experience that viewers want to
+                    watch, Social Studios’ social media TV app quickly identifies posts from people's close friends and favorite pages and automagically turns them into Your Show.
+                    The professionally produced daily TV show, Your Show, complete with presenter, makes for entertaining viewing on any screen.
+
+
+                    <div id="about_yourshow">
+                        <h1>About Your Show</h1>
+                        <p>A personal daily TV show starring you and Your Friends!</p>
+                        <img src="/images/yourshow.jpg"/>
+                    </div>
+
+                    <div id="facebook_yourshow">
+                        <p>Find us on facebook: <a href="https://apps.facebook.com/yourshow/"/>Your show facebook app</a></p>
+                        <div class="fb-facepile" data-action="use" data-max-rows="1" data-width="300"></div>
+                    </div>
+
+                </div> <!-- // End of #about -->
+
+                <div id="team">
+
+                    <div class="container-table">
+                        <div class="row">
+                            <div class="member">
+                                <div class="user">
+                                    <div class="image" id="anat"></div>
+                                    <p class="name">Anat Amibar</p>
+                                    <p class="title">CEO</p>
+                                </div>
+                                <p class="teammate">Anat has more than a dozen years of experience driving strategy and product development for consumer web applications. Before founding Social Studios, she led product development at Yahoo!, Gogobot, myThings, and FareChase. Her professional passion is providing outstanding user experience and value. On the home front, she shares the joys and challenges of raising four young children with her husband. She also enjoys singing with a local group to maintain a sense of balance.
+                                </p>
+                                <span class="break"></span>
+                            </div>
+                            <div class="member">
+                                <div class="user">
+                                    <div class="image" id="moshi"></div>
+                                    <p class="name">Moshi Delgo</p>
+                                    <p class="title">COO</p>
+                                </div>
+                                <p class="teammate">Moshi thinks big and aims high, all with uncanny product intuition. Tapping into his web application development skills using open-source platforms, he’s built multiple apps and products based on social networks such as Facebook and Twitter that to date have been used by more than 100,000 consumers of online media. Moshi can take pretty much any idea and turn it into something real. During development or brainstorming for new concepts, or simply just to relax, he loves listening to music and playing on his acoustic guitar.
+                                </p>
+                                <span class="break"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="member">
+                                <div class="user">
+                                    <div class="image" id="yaeli"></div>
+                                    <p class="name">Yaeli Avnery</p>
+                                    <p class="title">Co-Founder & Creative Director</p>
+                                </div>
+                                <p class="teammate">Before co-founding Social Studios, Yaeli spent more than 13 years as creator, executive producer, and show runner of some of Israel's highest rated prime time TV shows, among them the Israeli versions of "Survivor," "Beauty and the Geek". Considered a leader in the world of Israeli TV content and development, Yaeli also created three original reality shows, "TLV,"
+                                    "U-Man," and "love lab,” all of which were sold to multiple countries around the world. On the rare occasion that she’s not working in TV, she follows politics with a passion and considers herself to be somewhat of a news junkie.</p>
+                                <span class="break"></span>
+                            </div>
+                            <div class="member">
+                                <div class="user">
+                                    <div class="image" id="ran"></div>
+                                    <p class="name">Ran Tavory</p>
+                                    <p class="title">CTO</p>
+                                </div>
+                                <p class="teammate">Ran brings more than 15 years of web software experience to his role at Social Studios. He built consumer products of mass scale at Google, YouTube, Microsoft, Outbrain, and Totango, and he also developed and contributed to several high-profile open-source projects. He’s a domain expert in the fields of NoSQL, web infrastructure, scaling, deployment automation, and continuous deployment. He’s also a blogger, a high-profile podcaster, and a software craftsman. In his occasional free time, Ran likes to hang out with his wife and two beautiful daughters, or play the drums with his rock band.</p>
+                                <span class="break"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="member">
+                                <div class="user">
+                                    <div class="image" id="tom"></div>
+                                    <p class="name">Tom Grasty</p>
+                                    <p class="title">Business Development</p>
+                                </div>
+                                <p class="teammate">Tom leads our content acquisition and distribution strategies. With an award-winning start-up (Stroome) under his belt, he’s driven to make a game-changing difference in how people consume content. Prior to founding Stroome in 2009, he spent a decade in the film and television business, overseeing the development of more than 100 hours of film, television, documentary, and digital properties at HBO, VH1, and DreamWorks. A published novelist, he also teaches part-time in the television/film departments at UCLA and Cal State Fullerton and is a regular contributor to PBS MediaShift Idea Lab and the Huffington Post.</p>
+                                <span class="break"></span>
+                            </div>
+                            <div class="member">
+                                <div class="user">
+                                    <div class="image" id="noa"></div>
+                                    <p class="name">Noa Tishby</p>
+                                    <p class="title">Advisory Board and Host</p>
+                                </div>
+                                <p class="teammate">A household name in Israel, Noa has starred in several TV shows and movies, and she once had the number-one record in the country. She’s also appeared in numerous TV programs and films in the United States, among them “CSI,” “Ghost of Girlfriends Past,” and “Star Trek: Enterprise.” On the production side, she sold the first Israeli TV show to become an American series, “In Treatment,” to HBO. She co-produced the series, which won a Peabody Award and has been nominated for multiple Emmys and Golden Globes, with Mark Wahlberg. In 2012 Noa made the Hollywood Reporter list of 12 female executives to watch. She was also named one the 50 most powerful Jews in the world, alongside Mark Zuckerberg.</p>
+                                <span class="break"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="member">
+                                <div class="user">
+                                    <div class="image" id="itai"></div>
+                                    <p class="name">Itay Keidar</p>
+                                    <p class="title">Developer</p>
+                                </div>
+                                <p class="teammate">Itai is a web and mobile applications enthusiast with years of experience in developing and heading numerous such products.
+                                    After 8 years of heading development of mostly business oriented products, taking part of Social Studio's vision for the social TV industry was too hard to resist.
+                                    When not working on making your social experience a much better one, you'll probably find Itai spending time on one of his other main interests including Mobile Affiliate Marketing, reading (history)books and running along the Tel-Aviv coastline</p>
+                                <span class="break"></span>
+                            </div>
+                            <div class="member">
+                                <div class="user">
+                                    <div class="image" id="alon"></div>
+                                    <p class="name">Alon Golan</p>
+                                    <p class="title">Developer</p>
+                                </div>
+                                <p class="teammate">Alon is professional and very experienced developer with client and server side knowledge. Partner in design, architecture and development of large number of web platforms at large companies as well as startups, very creative and thinks big, love innovation and challenges. Loves to spend his free time with his family, is cat and a good book.</p>
+                                <span class="break"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="member">
+                                <div class="user">
+                                    <div class="image" id="ori"></div>
+                                    <p class="name">Ori Shmolovski</p>
+                                    <p class="title">Developer</p>
+                                </div>
+                                <p class="teammate">Ori started programming 1 day after the Internet showed up. creating beautiful, engaging, easy to use, cutting edge web applications that adds real value to the users is he's passion. UX/Product side of the development is part of his skills set but he will never leave the keyboard(unless something more efficient then keyboard will be invented).
+                                    likes to juggle while solving problems, play guitar and ski.</p>
+                            </div>
+                            <div class="member">
+                                <div class="user">
+                                    <div class="image" id="onn"></div>
+                                    <p class="name">Onn Henner</p>
+                                    <p class="title">MultiMedia artist</p>
+                                </div>
+                                <p class="teammate"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="press">
+                    <h1>Links to articles</h1>
+                    <p>Contact PR <a href="mailto:press@socialstudios.tv"> press@socialstudios.tv</a></p>
+                    <div class="container-table">
+                        <div class="row">
+                            <img src="/images/heart.jpg"/>
+                            <a href="#">link to an article</a>
+                        </div>
+                        <div class="row">
+                            <img src="/images/heart.jpg"/>
+                            <a href="#">link to an article</a>
+                        </div>
+                        <div class="row">
+                            <img src="/images/heart.jpg"/>
+                            <a href="#">link to an article</a>
+                        </div>
+                        <div class="row">
+                            <img src="/images/heart.jpg"/>
+                            <a href="#">link to an article</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="contactus">
+                    <h1>Contact Us</h1>
+                    <a href="#">info@socialstudios.tv</a>
+
+                    <h1>Jobs</h1>
+                    <a href="#">jobs@socialstudios.tv</a>
+
+                </div>
+
+            </div>
         </div>
-      </article>
-        <footer>
-          <ul>
-            <li><a href="/privacy.html">Privacy policy</a></li>
-            <li>/</li>
-            <li><a href="/terms.html">Terms & Conditions</a></li>
-          </ul>
-          <p>Copyright © 2012 Social Studios Ltd. All rights reserved</p>
-          <a href="http://mixpanel.com/f/partner"><img src="http://mixpanel.com/site_media/images/partner/badge_blue.png" alt="Mobile Analytics" /></a>
-        </footer>
-
-    </section> <!--  //# end of comp_info_user -->
-
+    </section>
   </div> <!-- // End of #main -->
 
+  <footer>
+    <ul>
+        <li><a href="#" style="color: #333837;">Privacy policy</a></li>
+        <li> / </li>
+        <li><a href="#" style="color: #333837;">Terms & Conditions</a></li>
+        <li style="float:right;color: #333837;">Copyright © 2012 Social Studios Ltd. All rights reserved</li>
+    </ul>
+  </footer>
 
   <!-- build:js scripts/scripts.js -->
   <script src='scripts/libs/jquery-1.7.2.min.js'></script>
