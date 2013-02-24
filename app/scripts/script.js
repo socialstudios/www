@@ -18,11 +18,6 @@ $(document).ready(function(){
         xfbml      : true,  // parse XFBML
         oauth    : true
   });
-  FB.getLoginStatus(function(response){
-    onStatus(response); // once on page load
-    FB.Event.subscribe('auth.statusChange', onStatus.onStatus); // every status change
-  });
-
   $window = $(window);
   $('[data-type]').each(function() {
     $(this).data('offsetY', parseInt($(this).attr('data-offsetY')));
