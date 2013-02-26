@@ -4,10 +4,6 @@
 */
 
 $(document).ready(function(){
-  code = GetURLParameter("code");
-  if (code == "seeall"){
-    $("#middle").show();
-  }
   change_view("about");
   handle_browser_support_html5();
   register_tabs_events();
