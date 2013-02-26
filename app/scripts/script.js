@@ -113,6 +113,9 @@ function register_tabs_events(){
         $(".tab-btn").each(function(){$(this).removeClass("selected");})
         $(this).addClass("selected");
     });
+    $("#gotoappvideo").click(function(){
+       window.location.href = "https://apps.facebook.com/yourshow/";
+    });
 }
 
 function change_view(view){

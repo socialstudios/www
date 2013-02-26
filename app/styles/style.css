@@ -103,7 +103,9 @@ aside {float:right;width:252px;height:155px;margin-right: 4px;}
 #about_yourshow p {margin-top: 10px;font-size: 16px;}
 #about_yourshow img {margin-top: 11px;}
 #facebook_yourshow {margin-top: 20px;}
-.fb-facepile {margin-top: 10px;}
+#facebook_yourshow img {float:left;width: 30px;height: 30px;}
+#facebook_yourshow p {float: left;margin: 7px 0px 5px 5px;width: 500px;}
+.fb-facepile {margin-top: 10px;margin-left: 0px;}
 
 /* Team */
 #team {margin-bottom: 50px;height: 1700px;}
@@ -141,3 +143,5 @@ aside {float:right;width:252px;height:155px;margin-right: 4px;}
 footer {width:960px;font-size: 16px;color: #333837;margin: 0 auto;padding-bottom: 20px;}
 footer ul {margin: 0;}
 footer ul li {margin: 0px 5px 0px 0px;}
+
+#gotoappvideo {cursor: pointer;}
