@@ -113,20 +113,18 @@ aside {float:right;width:252px;height:155px;margin-right: 4px;}
 .container-table .row {float: left;width: 100%;}
 .container-table .row .member {width: 330px;height:100%;float: left;margin: 5px 0px;padding-bottom: 15px;}
 .container-table .break {width: 210px;border-top: 1px #666666 solid;float: left;margin-top: 5px;}
-.container-table .image {float: left;width: 45px;height: 45px;}
-.container-table .name {font-weight: bold;float: left;width: 200px;margin:13px 0px 0px 5px;}
+.container-table .image {float: left;width: 124px;height: 132px;}
+.container-table .name {font-weight: bold;float: left;width: 200px;margin:102px 0px 0px 5px;}
 .container-table .title {font-weight: 100;font-size:12px;float: left;width: 200px;margin:0px 0px 0px 5px;}
 .container-table .teammate {margin: 5px 0px 5px 0px;float: left;width: 317px;font-size: 15px;height: 300px;}
-#anat {background: url("/images/sprit2.jpg") no-repeat -136px 0px;}
-#moshi{background: url("/images/sprit2.jpg") no-repeat -45px -45px;}
-#yaeli{background: url("/images/sprit2.jpg") no-repeat -45px 0px;}
-#ran{background: url("/images/sprit2.jpg") no-repeat -181px 0px;}
-#tom{background: url("/images/sprit2.jpg") no-repeat -138px -45px;}
-#noa{background: url("/images/sprit2.jpg") no-repeat 0 0;}
-#itai{background: url("/images/sprit2.jpg") no-repeat -90px -45px;}
-#alon{background: url("/images/sprit2.jpg") no-repeat 0px -45px;}
-#ori{background: url("/images/sprit2.jpg") no-repeat -183px -45px;}
-#onn{background: url("/images/sprit2.jpg") no-repeat -90px 0px;}
+#anat {background: url("/images/team_sprite.png") no-repeat -635px -1px;}
+#moshi{background: url("/images/team_sprite.png") no-repeat -379px 2px;}
+#yaeli{background: url("/images/team_sprite.png") no-repeat -762px -1px}
+#ran{background: url("/images/team_sprite.png") no-repeat -1px -2px;}
+#tom{background: url("/images/team_sprite.png") no-repeat -126px -1px;}
+#noa{background: url("/images/team_sprite.png") no-repeat -505px 0px;}
+#ori{background: url("/images/team_sprite.png") no-repeat -251px -1px;}
+#onn{background: url("/images/team_sprite.png") no-repeat -893px -1px;}
 
 /* Press */
 #press {width: 700px;height: 1200px;}

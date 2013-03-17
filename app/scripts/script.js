@@ -122,5 +122,6 @@ function change_view(view){
     $("#main_content").children().each(function(idx, val){$(val).hide()});
     elem = document.getElementById(view);
     $(elem).show();
+    return false;
 }
 
