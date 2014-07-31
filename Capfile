@@ -32,8 +32,17 @@ task :deploy_html_short_cache do
         }
         contents = open(file)
         _s3.buckets[bucket].objects[path].write(contents, options)
+      when ".css"
+        puts "writing css"
+        puts file
+        options = {
+          :acl => :public_read,
+          :cache_control => 'public, max-age=60',
+          :content_type => 'text/css;charset=utf-8'
+        }
+        contents = open(file)
+        _s3.buckets[bucket].objects[path].write(contents, options)
       end
-
     end
   end
 end
